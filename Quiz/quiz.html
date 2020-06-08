@@ -1,0 +1,84 @@
+<DOCTYPE html>
+  <html>
+<head>
+    <title> JS quiz </title>
+    <link href = "quizStyle.css" rel = "stylesheet">
+    <link href = "../BootStyle.css" rel = "stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+      <nav class="navbar navbar-inverse">
+          <div class="container-fluid">
+            <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">The Beatles</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+              <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#">Albums <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="../yellow.html">Yellow Submarine</a></li>
+                <li><a href="../revolver.html">Revolver</a></li>
+                <li><a href="../magicalMystery.html">Magical Mystery Tour</a></li>
+                <li><a href="../lonelyHearts.html">Lonely Hearts Club Band</a></li>
+                <li><a href = "../rubberSoul.html">Rubber Soul</a></li>
+                <li><a href = "../abbeyRoad.html">Abbey Road</a></li>
+          
+              </ul>
+              </li>
+              <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Beatle Games~! <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                <li><a href="../cards/cardMatch.html">Card Matching Game</a></li>
+                <li><a href="../adventurePage/adventurePage.html">Beatles Text Adventure</a></li>
+                <li><a href="../Soundboard/soundboard.html">Beatles Soundboard</a></li>
+                <li><a href="../Quiz/quiz.html">Beatles Quiz</a></li>
+          
+                </ul>
+              </li>
+              </ul> 
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+              <li><a href="../loginPage/logIn.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+            </ul>
+            </div>
+          </div>
+          </nav>
+          <div id = "body">
+
+  <div id = "hide-img" class = "">
+    <h2 id = "title" class = ""><strong> Welcome to The Beatles Quiz! <strong> </h2>
+     <h4 id = "checkmeout" class = "hide">  </h4>
+    <div id = "score" class = "score hide">
+            <p>Right: 0 </p>
+            <p>Wrong: 0 </p>
+    </div>
+    <div class = "qcontainer">
+        <div id = "question-container" class = 'hide'>
+        <div id = "question"> Question </div>
+        <div id = "answer-buttons" class = "btn-grid">
+          <button class = "btn ans"> Answer 1 </button>
+          <button class = "btn ans"> Answer 2 </button>
+          <button class = "btn ans"> Answer 3 </button>
+          <button class = "btn ans"> Answer 4 </button>
+          </div>
+        </div>
+        <div class = "controls">
+          <button id = "start-btn" class = "start-btn btn"> Start </button>
+          <button id = 'next-btn' class = "next-btn btn hide"> Next </button>
+        </div>
+    </div>
+    <br>
+    <div id = 'textUpdate' class ="h"><p> </p> </div></div>
+    </div>
+</body>
+<script src = "quizScript.js"> </script>
+  </html>

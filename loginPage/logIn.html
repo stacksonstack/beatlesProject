@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Log In Page</title>
+        <link href = "logIn.css" rel = "stylesheet">
+        <link rel = "stylesheet" href = "../BootStyle.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    </head> 
+    <body>
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+              <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="index.html">The Beatles</a>
+              </div>
+              <div class="collapse navbar-collapse" id="myNavbar">
+              <ul class="nav navbar-nav">
+                <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Albums <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="../yellow.html">Yellow Submarine</a></li>
+                  <li><a href="../revolver.html">Revolver</a></li>
+                  <li><a href="../magicalMystery.html">Magical Mystery Tour</a></li>
+                  <li><a href="../lonelyHearts.html">Lonely Hearts Club Band</a></li>
+                  <li><a href = "../rubberSoul.html">Rubber Soul</a></li>
+                  <li><a href = "../abbeyRoad.html">Abbey Road</a></li>
+            
+                </ul>
+                </li>
+                <li class="dropdown">
+                  <a class="dropdown-toggle" data-toggle="dropdown" href="#">Beatle Games~! <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                  <li><a href="../cards/cardMatch">Card Matching Game</a></li>
+                  <li><a href="../adventurePage/adventurePage.html">Beatles Text Adventure</a></li>
+                  <li><a href="../Soundboard/soundboard.html">Beatles Soundboard</a></li>
+                  <li><a href="../Quiz/quiz.html">Beatles Quiz</a></li>
+            
+                  </ul>
+                </li>
+                </ul> 
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                <li><a href="loginPage/logIn.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+              </ul>
+              </div>
+            </div>
+            </nav>
+      <div id ="cont" class = "container">
+          <div class="container-main">
+          <br>
+          <label id = "welcome"><b>Welcome!</b></label>
+          <input type="text" class = "bootle user"  placeholder="Enter Username" name="uname"  id = "user"  required>
+          <br>
+          <input type="password" placeholder="Enter Password" name="psw" class = "bootle user" id = "pass"  required>
+          <br>
+          
+          <button id = "login" class = "bootle"  onclick = "logIn()">Login</button>
+          <br>
+          <button id="account" class = "bootle">Create account</button>
+          <p id = "result"></p>
+          </div>
+        </div>
+          
+  
+
+          
+<!-- The Modal -->
+          <div id="myModal" class="modal">
+  <!-- Modal content -->
+          <div class="modal-content">
+          <span class="close">Close</span>
+          <h1> register below </h1>
+          
+       
+      
+        <label for = "fname">Enter your First Name </label>
+        <br>
+        <input type = "text" class = "bootle userB" id = "fname">
+        <br>
+        <label for = "lname">Enter your Last Name </label>
+        <br>
+        <input type = "text" class = "bootle userB" id = "lname">
+        <br>
+        <label for = "uname">Enter your username -</label>
+        <br>
+        <input type = "text" value = "securethebags" class = "bootle userB" id = "uname">
+        <br>
+        <label for = "pass">Enter your password  -- </label>  
+        <br>
+        <input type = "password" class = "bootle userB" id = "secondPass">
+        <br>
+        <label for = "pass">Re enter your password</label>
+        <br>
+        <input type = "password" class = "bootle userB" id = "rePass">
+        <br>
+        
+     
+      <button id = "register" > Register! </button>   
+
+        </div>
+
+
+        </div>
+        <div id = "success"> </div>
+
+      
+
+
+       
+     
+        <script src = "logIn.js"> </script>
+    </body>
+</html>

@@ -1,0 +1,212 @@
+@font-face {
+  font-family: bootle;
+  src: url(BOOTLE.TTF);
+}
+
+html body {
+background-repeat: no-repeat;
+background-size: 100% 100%;
+width: 100%;
+min-height: 100vh;
+padding: 0;
+font-family: Monospace;
+font-size: 14pt;
+}
+ 
+ 
+blockquote {
+  font-family: Arial;
+  background-color: #F8EFBE;
+  border-left-color: #F4B514;
+}
+
+#contactme {
+  background-color: black;
+  color: white;
+  height: 180px;
+}
+
+
+.navbar {
+  position: relative;
+  margin-bottom: 0px;
+  font-family: bootle;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+}
+a.navbar-brand {
+  font-size: 30px;
+  align-items :center;
+}
+
+.top-nav {
+  background-color: #671100;
+}
+
+.top-nav a {
+  color: #d3e316;
+}
+
+h1.headingStatement {
+  font-family: Monospace;
+  font-size: 2em;
+}
+
+
+/* bootstrap override */
+
+a.btn-primary:hover {
+  text-decoration: none;
+}
+
+.navbar-nav li a:hover {
+    background-color: #FF0000;
+    border-radius: 10px;
+}
+.navbar-toggle .icon-bar {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background-color: #cccccc;
+  border-radius: 1px;
+}
+
+
+.header{
+  padding: 0px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  font-family: bootle;
+  font-size: 16px;
+}
+
+h1{
+  margin: 0;
+  padding: 0;
+}
+
+#abbeyColor{ background-color:#5A95BE; }
+#abbeyTHead{ background-color: #5C764F; }
+#abbeyTable{ background-color: 	#495255; }
+#rubberColor { background-color: #49785E; }
+#abbeyColor{ background-color:#5A95BE; }
+#revolverColor { background-color: #010101; }
+#magicColor { background-color: #A92E61; }
+#yellowColor { background-color: #FDE600; }
+#pepperColor { background-color: #1B78BE; }
+
+.album-body {
+  text-align: left;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 50px;
+  background-color: black;
+}
+.album-title {
+  text-align: center;
+  padding: 20px;
+  margin: 0px 0px;
+  font-weight: bolder;
+  font-size: 17px;
+  font-style: italic;
+  margin-left: 30%;
+  color: black;
+  opacity: 1;
+}
+
+
+
+.table {
+  width: 60%;
+  margin-left: 20%;
+  margin-right: 20%;
+  background-color: white;
+  border: 2px solid black;
+}
+
+.card{
+  background-color: white;
+  text-align: center;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding: 10px;
+  margin-top:30px;
+  opacity: .96;
+}
+.card-title {
+  font-family: cursive;
+  font-size: 25px;}
+
+.card-header {
+  font-family: bootle;
+  font-size: 40px;
+}
+
+
+#abbeyTHead{ background-color: #5C764F; }
+#rubberTHead { background-color: #533B17; }
+#revolverTHead
+{
+  background-color: #9B9B9B;
+  color:black;
+}
+#magicTHead { background-color: 	#FCC023; }
+#yellowTHead { background-color:#CE1510; }
+#pepperTHead { background-color:#E64330; }
+
+
+.table-default{
+  margin: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  opacity: .95;
+  min-width: 70%;
+}
+#abbeyTable{ background-color: 	#495255; }
+#yellowTable{ background-color: 	#36ADE5; }
+#rubberTable{ background-color: #C95701; }
+#revolverTable
+{ 
+  background-color: #A6A6A6;
+  color:black;
+}
+#magicTable{ background-color: #769132; }
+#pepperTable{ background-color: #E75D85; }
+
+tr:hover{
+  color: 	#5A95BE;
+}
+blockquote{
+  background-color:#5A95BE;
+  border-left-color: #5A95BE;
+}
+thead{
+  background-color: #5C764F;
+}
+blockquote .small, blockquote footer, blockquote small {
+  color: black;
+  font-weight: bolder;
+}
+
+
+#lonelyHeart {
+  background-image: url("Images/peppers.jpg");
+}
+#rubberSoul {
+  background-image: url("Images/rubberSoulBack.jpg");
+}
+#revolver {
+  background-image: url("Images/revolver.jpg");
+}
+#magic {
+  background-image: url("Images/magicBus.jpg");
+}
+#yellowSub {
+  background-image: url("Images/yellowBanner.jpg");
+}
+#abbey {
+  background-image: url("Images/abbey.jpg");
+}

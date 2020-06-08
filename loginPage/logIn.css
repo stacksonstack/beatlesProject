@@ -1,0 +1,136 @@
+@font-face {
+  font-family: bootle;
+  src: url(../BOOTLE.TTF);
+}
+html body {
+    background-image: url('../Images/beatle.jpg');
+    overflow: auto;
+    object-fit: cover;
+    font-family: bootle;
+    min-height: 100vh;
+}
+.bootle {
+    font-family: bootle;
+    font-size: 15px;
+    font-weight: bolder;
+
+}
+#pass {
+  color: black;
+  font-family: sans-serif;
+}
+.hidden {
+  display: none;
+  visibility: hidden;
+}
+#success{
+  text-align:center;
+}
+.container {
+   flex-wrap: wrap;
+   text-align: center;
+   font-family: bootle; 
+} 
+.container-main {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin-top: 10%;
+    margin-left: 40%;
+    margin-right: 30%;
+    background-color:rgba(214, 214, 214, 0.8);
+    min-height: 60vh; 
+    min-width: 50vh;
+    border-style: double;
+    border-width: 8px;
+    border-color: black;
+}
+.user {
+    text-align: center;
+    align-items: center;
+    margin-left: 15%;
+    margin-right: 15%;
+    border-style: hidden;
+}
+
+.userB {
+  text-align: center;
+  align-items: center;
+  margin: 10px;
+  border-style: hidden;
+}
+
+
+#login {
+    margin-top: 10px;
+    border-radius: 100px;
+    margin-left: 30%;
+    margin-right: 30%;
+    border-style: groove;
+    border-color: black;
+}
+
+#account {
+    border-radius: 100px;
+    margin-left: 30%;
+    margin-right: 30%;
+    border-style: groove;
+    border-color: black;
+    margin-bottom:10%;
+}
+
+#welcome{
+    font-size: 60px;
+    margin-bottom: 20px;
+    
+}
+
+
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    flex-wrap: wrap;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    min-height: 100vh;
+
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    display: flex;
+    min-width: 24vh;
+    justify-content: center;
+    align-content: center;
+   flex-wrap: wrap;
+    background-color: gray;
+    margin: 10% auto;
+    padding: 25px;
+    text-align: center;
+    border: 1px solid #888;
+    width: 15%;
+  }
+  
+  /* The Close Button */
+  .close {
+    margin-top: -3%;
+    margin-right: -2%;
+    color:black;
+    float: right;
+    font-size: 15px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: red;
+    text-decoration: none;
+    cursor: pointer;
+  }

@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="styles.css" rel="stylesheet">
+  <link rel="stylesheet" href ="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script src="script.js" async></script>
+  <title>Card Match</title>
+</head>
+<body>
+  
+    <body >
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+              <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="index.html">The Beatles</a>
+              </div>
+              <div class="collapse navbar-collapse" id="myNavbar">
+              <ul class="nav navbar-nav">
+                <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Albums <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="../yellow.html">Yellow Submarine</a></li>
+                  <li><a href="../revolver.html">Revolver</a></li>
+                  <li><a href="../magicalMystery.html">Magical Mystery Tour</a></li>
+                  <li><a href="../lonelyHearts.html">Lonely Hearts Club Band</a></li>
+                  <li><a href = "../rubberSoul.html">Rubber Soul</a></li>
+                  <li><a href = "../abbeyRoad.html">Abbey Road</a></li>
+            
+                </ul>
+                </li>
+                <li class="dropdown">
+                  <a class="dropdown-toggle" data-toggle="dropdown" href="#">Beatle Games~! <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                  <li><a href="../cards/cardMatch">Card Matching Game</a></li>
+                  <li><a href="../adventurePage/adventurePage.html">Beatles Text Adventure</a></li>
+                  <li><a href="../Soundboard/soundboard.html">Beatles Soundboard</a></li>
+                  <li><a href="../Quiz/quiz.html">Beatles Quiz</a></li>
+            
+                  </ul>
+                </li>
+                </ul> 
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                <li><a href="loginPage/logIn.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+              </ul>
+              </div>
+            </div>
+            </nav>
+  <h1 class="page-title">Card Match</h1>
+  <div class="overlay-text visible">
+    Click to Start
+  </div>
+  <div class="overlay-text" id = "game-over-text">
+    GAME OVER
+    <span class="overlay-text-small">Click to Restart</span>
+  </div>
+  <div class="overlay-text" id = "victory-text">
+    VICTORY
+    <span class="overlay-text-small">Click to Restart</span>
+  </div>
+
+  <div class="game-container">
+    <div class="game-info-container">
+      <div class="game-info">
+        Time <span id="time-remaining">75</span>
+      </div>
+      <div class="game-info">
+        Flips <span id="flips">0</span>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="bandImg bandImg-top-left" src="Assets/Images/corner1.png">
+        <img class="bandImg bandImg-top-right" src="Assets/Images/corner2.png">
+        <img class="bandImg bandImg-bottom-left" src="Assets/Images/corner3.png">
+        <img class="bandImg bandImg-bottom-right" src="Assets/Images/corner4.png">
+        <img class="sub" src="Assets/Images/sub_beatle.png">
+      </div>
+      <div class="card-front card-face">
+        <img class="bandImg bandImg-top-left" src="Assets/Images/corner1.png">
+        <img class="bandImg bandImg-top-right" src="Assets/Images/corner2.png">
+        <img class="bandImg bandImg-bottom-left" src="Assets/Images/corner3.png">
+        <img class="bandImg bandImg-bottom-right" src="Assets/Images/corner4.png">
+        <img class="card-value" src="Assets/Images/george3_beatle.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="bandImg bandImg-top-left" src="Assets/Images/corner1.png">
+        <img class="bandImg bandImg-top-right" src="Assets/Images/corner2.png">
+        <img class="bandImg bandImg-bottom-left" src="Assets/Images/corner3.png">
+        <img class="bandImg bandImg-bottom-right" src="Assets/Images/corner4.png">
+        <img class="sub" src="Assets/Images/sub_beatle.png">
+      </div>
+      <div class="card-front card-face">
+        <img class="bandImg bandImg-top-left" src="Assets/Images/corner1.png">
+        <img class="bandImg bandImg-top-right" src="Assets/Images/corner2.png">
+        <img class="bandImg bandImg-bottom-left" src="Assets/Images/corner3.png">
+        <img class="bandImg bandImg-bottom-right" src="Assets/Images/corner4.png">
+        <img class="card-value" src="Assets/Images/george3_beatle.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="bandImg bandImg-top-left" src="Assets/Images/corner1.png">
+        <img class="bandImg bandImg-top-right" src="Assets/Images/corner2.png">
+        <img class="bandImg bandImg-bottom-left" src="Assets/Images/corner3.png">
+        <img class="bandImg bandImg-bottom-right" src="Assets/Images/corner4.png">
+        <img class="sub" src="Assets/Images/sub_beatle.png">
+      </div>
+      <div class="card-front card-face">
+        <img class="bandImg bandImg-top-left" src="Assets/Images/corner1.png">
+        <img class="bandImg bandImg-top-right" src="Assets/Images/corner2.png">
+        <img class="bandImg bandImg-bottom-left" src="Assets/Images/corner3.png">
+        <img class="bandImg bandImg-bottom-right" src="Assets/Images/corner4.png">
+        <img class="card-value" src="Assets/Images/paul2_beatle.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="bandImg bandImg-top-left" src="Assets/Images/corner1.png">
+        <img class="bandImg bandImg-top-right" src="Assets/Images/corner2.png">
+        <img class="bandImg bandImg-bottom-left" src="Assets/Images/corner3.png">
+        <img class="bandImg bandImg-bottom-right" src="Assets/Images/corner4.png">
+        <img class="sub" src="Assets/Images/sub_beatle.png">
+      </div>
+      <div class="card-front card-face">
+        <img class="bandImg bandImg-top-left" src="Assets/Images/corner1.png">
+        <img class="bandImg bandImg-top-right" src="Assets/Images/corner2.png">
+        <img class="bandImg bandImg-bottom-left" src="Assets/Images/corner3.png">
+        <img class="bandImg bandImg-bottom-right" src="Assets/Images/corner4.png">
+        <img class="card-value" src="Assets/Images/paul2_beatle.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="bandImg bandImg-top-left" src="Assets/Images/corner1.png">
+        <img class="bandImg bandImg-top-right" src="Assets/Images/corner2.png">
+        <img class="bandImg bandImg-bottom-left" src="Assets/Images/corner3.png">
+        <img class="bandImg bandImg-bottom-right" src="Assets/Images/corner4.png">
+        <img class="sub" src="Assets/Images/sub_beatle.png">
+      </div>
+      <div class="card-front card-face">
+        <img class="bandImg bandImg-top-left" src="Assets/Images/corner1.png">
+        <img class="bandImg bandImg-top-right" src="Assets/Images/corner2.png">
+        <img class="bandImg bandImg-bottom-left" src="Assets/Images/corner3.png">
+        <img class="bandImg bandImg-bottom-right" src="Assets/Images/corner4.png">
+        <img class="card-value" src="Assets/Images/george4_beatle.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="bandImg bandImg-top-left" src="Assets/Images/corner1.png">
+        <img class="bandImg bandImg-top-right" src="Assets/Images/corner2.png">
+        <img class="bandImg bandImg-bottom-left" src="Assets/Images/corner3.png">
+        <img class="bandImg bandImg-bottom-right" src="Assets/Images/corner4.png">
+        <img class="sub" src="Assets/Images/sub_beatle.png">
+      </div>
+      <div class="card-front card-face">
+        <img class="bandImg bandImg-top-left" src="Assets/Images/corner1.png">
+        <img class="bandImg bandImg-top-right" src="Assets/Images/corner2.png">
+        <img class="bandImg bandImg-bottom-left" src="Assets/Images/corner3.png">
+        <img class="bandImg bandImg-bottom-right" src="Assets/Images/corner4.png">
+        <img class="card-value" src="Assets/Images/george4_beatle.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="bandImg bandImg-top-left" src="Assets/Images/corner1.png">
+        <img class="bandImg bandImg-top-right" src="Assets/Images/corner2.png">
+        <img class="bandImg bandImg-bottom-left" src="Assets/Images/corner3.png">
+        <img class="bandImg bandImg-bottom-right" src="Assets/Images/corner4.png">
+        <img class="sub" src="Assets/Images/sub_beatle.png">
+      </div>
+      <div class="card-front card-face">
+        <img class="bandImg bandImg-top-left" src="Assets/Images/corner1.png">
+        <img class="bandImg bandImg-top-right" src="Assets/Images/corner2.png">
+        <img class="bandImg bandImg-bottom-left" src="Assets/Images/corner3.png">
+        <img class="bandImg bandImg-bottom-right" src="Assets/Images/corner4.png">
+        <img class="card-value" src="Assets/Images/john2_beatle.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="bandImg bandImg-top-left" src="Assets/Images/corner1.png">
+        <img class="bandImg bandImg-top-right" src="Assets/Images/corner2.png">
+        <img class="bandImg bandImg-bottom-left" src="Assets/Images/corner3.png">
+        <img class="bandImg bandImg-bottom-right" src="Assets/Images/corner4.png">
+        <img class="sub" src="Assets/Images/sub_beatle.png">
+      </div>
+      <div class="card-front card-face">
+        <img class="bandImg bandImg-top-left" src="Assets/Images/corner1.png">
+        <img class="bandImg bandImg-top-right" src="Assets/Images/corner2.png">
+        <img class="bandImg bandImg-bottom-left" src="Assets/Images/corner3.png">
+        <img class="bandImg bandImg-bottom-right" src="Assets/Images/corner4.png">
+        <img class="card-value" src="Assets/Images/john2_beatle.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="bandImg bandImg-top-left" src="Assets/Images/corner1.png">
+        <img class="bandImg bandImg-top-right" src="Assets/Images/corner2.png">
+        <img class="bandImg bandImg-bottom-left" src="Assets/Images/corner3.png">
+        <img class="bandImg bandImg-bottom-right" src="Assets/Images/corner4.png">
+        <img class="sub" src="Assets/Images/sub_beatle.png">
+      </div>
+      <div class="card-front card-face">
+        <img class="bandImg bandImg-top-left" src="Assets/Images/corner1.png">
+        <img class="bandImg bandImg-top-right" src="Assets/Images/corner2.png">
+        <img class="bandImg bandImg-bottom-left" src="Assets/Images/corner3.png">
+        <img class="bandImg bandImg-bottom-right" src="Assets/Images/corner4.png">
+        <img class="card-value" src="Assets/Images/paul_beatle.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="bandImg bandImg-top-left" src="Assets/Images/corner1.png">
+        <img class="bandImg bandImg-top-right" src="Assets/Images/corner2.png">
+        <img class="bandImg bandImg-bottom-left" src="Assets/Images/corner3.png">
+        <img class="bandImg bandImg-bottom-right" src="Assets/Images/corner4.png">
+        <img class="sub" src="Assets/Images/sub_beatle.png">
+      </div>
+      <div class="card-front card-face">
+        <img class="bandImg bandImg-top-left" src="Assets/Images/corner1.png">
+        <img class="bandImg bandImg-top-right" src="Assets/Images/corner2.png">
+        <img class="bandImg bandImg-bottom-left" src="Assets/Images/corner3.png">
+        <img class="bandImg bandImg-bottom-right" src="Assets/Images/corner4.png">
+        <img class="card-value" src="Assets/Images/paul_beatle.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="bandImg bandImg-top-left" src="Assets/Images/corner1.png">
+        <img class="bandImg bandImg-top-right" src="Assets/Images/corner2.png">
+        <img class="bandImg bandImg-bottom-left" src="Assets/Images/corner3.png">
+        <img class="bandImg bandImg-bottom-right" src="Assets/Images/corner4.png">
+        <img class="sub" src="Assets/Images/sub_beatle.png">
+      </div>
+      <div class="card-front card-face">
+        <img class="bandImg bandImg-top-left" src="Assets/Images/corner1.png">
+        <img class="bandImg bandImg-top-right" src="Assets/Images/corner2.png">
+        <img class="bandImg bandImg-bottom-left" src="Assets/Images/corner3.png">
+        <img class="bandImg bandImg-bottom-right" src="Assets/Images/corner4.png">
+        <img class="card-value" src="Assets/Images/george_beatle.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="bandImg bandImg-top-left" src="Assets/Images/corner1.png">
+        <img class="bandImg bandImg-top-right" src="Assets/Images/corner2.png">
+        <img class="bandImg bandImg-bottom-left" src="Assets/Images/corner3.png">
+        <img class="bandImg bandImg-bottom-right" src="Assets/Images/corner4.png">
+        <img class="sub" src="Assets/Images/sub_beatle.png">
+      </div>
+      <div class="card-front card-face">
+        <img class="bandImg bandImg-top-left" src="Assets/Images/corner1.png">
+        <img class="bandImg bandImg-top-right" src="Assets/Images/corner2.png">
+        <img class="bandImg bandImg-bottom-left" src="Assets/Images/corner3.png">
+        <img class="bandImg bandImg-bottom-right" src="Assets/Images/corner4.png">
+        <img class="card-value" src="Assets/Images/george_beatle.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="bandImg bandImg-top-left" src="Assets/Images/corner1.png">
+        <img class="bandImg bandImg-top-right" src="Assets/Images/corner2.png">
+        <img class="bandImg bandImg-bottom-left" src="Assets/Images/corner3.png">
+        <img class="bandImg bandImg-bottom-right" src="Assets/Images/corner4.png">
+        <img class="sub" src="Assets/Images/sub_beatle.png">
+      </div>
+      <div class="card-front card-face">
+        <img class="bandImg bandImg-top-left" src="Assets/Images/corner1.png">
+        <img class="bandImg bandImg-top-right" src="Assets/Images/corner2.png">
+        <img class="bandImg bandImg-bottom-left" src="Assets/Images/corner3.png">
+        <img class="bandImg bandImg-bottom-right" src="Assets/Images/corner4.png">
+        <img class="card-value" src="Assets/Images/john_beatle.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="bandImg bandImg-top-left" src="Assets/Images/corner1.png">
+        <img class="bandImg bandImg-top-right" src="Assets/Images/corner2.png">
+        <img class="bandImg bandImg-bottom-left" src="Assets/Images/corner3.png">
+        <img class="bandImg bandImg-bottom-right" src="Assets/Images/corner4.png">
+        <img class="sub" src="Assets/Images/sub_beatle.png">
+      </div>
+      <div class="card-front card-face">
+        <img class="bandImg bandImg-top-left" src="Assets/Images/corner1.png">
+        <img class="bandImg bandImg-top-right" src="Assets/Images/corner2.png">
+        <img class="bandImg bandImg-bottom-left" src="Assets/Images/corner3.png">
+        <img class="bandImg bandImg-bottom-right" src="Assets/Images/corner4.png">
+        <img class="card-value" src="Assets/Images/john_beatle.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="bandImg bandImg-top-left" src="Assets/Images/corner1.png">
+        <img class="bandImg bandImg-top-right" src="Assets/Images/corner2.png">
+        <img class="bandImg bandImg-bottom-left" src="Assets/Images/corner3.png">
+        <img class="bandImg bandImg-bottom-right" src="Assets/Images/corner4.png">
+        <img class="sub" src="Assets/Images/sub_beatle.png">
+      </div>
+      <div class="card-front card-face">
+        <img class="bandImg bandImg-top-left" src="Assets/Images/corner1.png">
+        <img class="bandImg bandImg-top-right" src="Assets/Images/corner2.png">
+        <img class="bandImg bandImg-bottom-left" src="Assets/Images/corner3.png">
+        <img class="bandImg bandImg-bottom-right" src="Assets/Images/corner4.png">
+        <img class="card-value" src="Assets/Images/paul3_beatle.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="bandImg bandImg-top-left" src="Assets/Images/corner1.png">
+        <img class="bandImg bandImg-top-right" src="Assets/Images/corner2.png">
+        <img class="bandImg bandImg-bottom-left" src="Assets/Images/corner3.png">
+        <img class="bandImg bandImg-bottom-right" src="Assets/Images/corner4.png">
+        <img class="sub" src="Assets/Images/sub_beatle.png">
+      </div>
+      <div class="card-front card-face">
+        <img class="bandImg bandImg-top-left" src="Assets/Images/corner1.png">
+        <img class="bandImg bandImg-top-right" src="Assets/Images/corner2.png">
+        <img class="bandImg bandImg-bottom-left" src="Assets/Images/corner3.png">
+        <img class="bandImg bandImg-bottom-right" src="Assets/Images/corner4.png">
+        <img class="card-value" src="Assets/Images/paul3_beatle.png">
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

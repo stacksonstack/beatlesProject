@@ -1,0 +1,130 @@
+@font-face {
+  font-family: bootle;
+  src: url(../BOOTLE.TTF);
+}
+
+.header{
+  padding: 7px;
+  background-color: black;
+  margin-top: 1%;
+  color: white;
+  text-align: center;
+  font-family: bootle;
+  font-size: 13px;
+}
+h1{
+  margin: 0;
+  padding: 0;
+}
+
+#text-head {
+  position: relative;
+  margin-top: 1.5%;
+}
+html .keys{
+  font-size: 10px;
+  background-repeat: repeat;
+  font-family: bootle;
+
+}
+
+
+body,html {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  min-height: 100vh;
+  background-size: 100% 100%;
+  background: url(../Images/studio.jpg);
+  background-size: contain;
+}
+.navbar{
+  font-family: bootles;
+  min-width: 100%;
+}
+a.navbar-brand {
+  font-size: 30px;
+  align-items :center;
+}
+a.dropdown-toggle {
+  font-size: 18.6px;
+}
+
+.keys {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  padding: 0px;
+}
+
+.key {
+  margin: 1rem;
+  margin-top: 25%;
+  font-size: 1.5rem;
+  padding: 1rem .5rem;
+  transition: all .07s ease;
+  width: 10rem;
+  height: 10rem;
+  text-align: center;
+  color: white;
+
+  text-shadow: 0 0 .5rem black;
+}
+#ohDarling {
+  background-image: url(../Images/abbeyRoadVinyl.png);
+  background-size: 100% 100%;
+}
+#help {
+  background-image: url(../Images/helpVinyl.png);
+  background-size: 100% 100%;
+}
+#yellowAlbum{
+  background-image: url(../Images/boatbeatles.png);
+  background-size: 100% 100%;
+}
+#lonelyHeart{
+  background-image: url(../Images/lonelyClubVinyl.png);
+  background-size: 100% 100%;
+}
+#rubberSoul{
+  background-image: url(../Images/rubbersoulVinyl.png);
+  background-size: 100% 100%;
+}
+#pleaseMe{
+  background-image: url(../Images/pleaseMeVinyl.png);
+  background-size: 100% 100%;
+}
+#selfTitled{
+  background-image: url(../Images/selfTitledVinyl.png);
+  background-size: 100% 100%;
+}
+#revolverVinyl{
+  background-image: url(../Images/revolverVinyl.png);
+  background-size: 100% 100%;
+}
+#mysteryTour{
+  background-image: url(../Images/mysteryTourVinyl.png);
+  background-size: 100% 100%;
+}
+.playing {
+  transform: scale(1.1);
+  border-radius: 100px;
+}
+kbd {
+  display: block;
+  font-size: 3rem;
+  opacity: .9;
+  margin-bottom: 0px;
+}
+
+.sound {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+  background-color: black;
+  font-weight: bolder;
+}
+.navbar {
+  font-family: bootle;
+}

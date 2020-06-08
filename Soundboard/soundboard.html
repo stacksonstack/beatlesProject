@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Beatles Drum Kit</title>
+  <link rel="stylesheet" href="soundStyle.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+          <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="../index.html">The Beatles Soundboard</a>
+          </div>
+          <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav">
+            <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Albums <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="../yellow.html">Yellow Submarine</a></li>
+              <li><a href="../revolver.html">Revolver</a></li>
+              <li><a href="../magicalMystery.html">Magical Mystery Tour</a></li>
+              <li><a href="../lonelyHearts.html">Lonely Hearts Club Band</a></li>
+              <li><a href = "../rubberSoul.html">Rubber Soul</a></li>
+              <li><a href = "../abbeyRoad.html">Abbey Road</a></li>
+        
+            </ul>
+            </li>
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#">Beatle Games~! <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+              <li><a href="../cards/cardMatch.html">Card Matching Game</a></li>
+              <li><a href="../adventurePage/adventurePage.html">Beatles Text Adventure</a></li>
+              <li><a href="../Soundboard/soundboard.html">Beatles Soundboard</a></li>
+              <li><a href="../Quiz/quiz.html">Beatles Quiz</a></li>
+        
+              </ul>
+            </li>
+            </ul> 
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+            <li><a href="loginPage/logIn.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+          </ul>
+          </div>
+        </div>
+        </nav>
+        <div class = "playing">
+  <div class="keys">
+    <div data-key="65" class="key" id = "ohDarling">
+      <kbd>A</kbd>
+      <span class="sound"> Oh! Darling </span>
+    </div>
+    <div data-key="83" class="key" id = "help">
+      <kbd>S</kbd>
+      <span class="sound">Help!</span>
+    </div>
+    <div data-key="68" class="key" id="yellowAlbum">
+      <kbd>D</kbd>
+      <span class="sound">kick</span>
+    </div>
+    <div data-key="70" class="key" id="lonelyHeart">
+      <kbd>F</kbd>
+      <span class="sound">openhat</span>
+    </div>
+    <div data-key="71" class="key" id="rubberSoul">
+      <kbd>G</kbd>
+      <span class="sound">boom</span>
+    </div>
+    <div data-key="72" class="key" id="revolverVinyl">
+      <kbd>H</kbd>
+      <span class="sound">ride</span>
+    </div>
+    <div data-key="74" class="key" id="selfTitled">
+      <kbd>J</kbd>
+      <span class="sound">snare</span>
+    </div>
+    <div data-key="75" class="key" id="pleaseMe">
+      <kbd>K</kbd>
+      <span class="sound">tom</span>
+    </div>
+    <div data-key="76" class="key" id="mysteryTour">
+      <kbd>L</kbd>
+      <span class="sound">tink</span>
+    </div>
+  </div>
+</div>
+  <audio data-key="65" src="sounds/oh-darling.mp3"></audio>
+  <audio data-key="83" src="sounds/beatles-elp.mp3"></audio>
+  <audio data-key="68" src="sounds/kick.wav"></audio>
+  <audio data-key="70" src="sounds/openhat.wav"></audio>
+  <audio data-key="71" src="sounds/boom.wav"></audio>
+  <audio data-key="72" src="sounds/ride.wav"></audio>
+  <audio data-key="74" src="sounds/snare.wav"></audio>
+  <audio data-key="75" src="sounds/tom.wav"></audio>
+  <audio data-key="76" src="sounds/tink.wav"></audio>
+
+
+  <script>
+    function removeTransition(e) {
+      if (e.propertyName !== 'transform') return;
+      e.target.classList.remove('playing');
+    }
+
+    function playSound(e) {
+      const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
+      const key = document.querySelector(`div[data-key="${e.keyCode}"]`);
+      if(!audio) return;
+      key.classList.add('playing');
+      audio.currentTime = 0;
+      audio.play();
+    }
+
+    const keys = Array.from(document.querySelectorAll('.key'));
+    keys.forEach(key => key.addEventListener('transitionend', removeTransition));
+    window.addEventListener('keydown', playSound);
+  </script>
+
+
+
+</body>
+</html>

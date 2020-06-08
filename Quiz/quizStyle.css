@@ -1,0 +1,170 @@
+/* add custom beatles fontface */
+@font-face {
+  font-family: beatles;
+  src: url(../BOOTLE.TTF)
+}
+/*  ::before and ::after insert something before/after
+ content of selected element which in our selector is all (*) elements */
+*, *::before , *::after {
+  box-sizing: border-box;
+  font-family: beatles;
+}
+
+/* root is similar to HTML tag */
+:root {
+  --hue-neutral: 200;
+  --hue-wrong: 0;
+  --hue-correct: 145;
+}
+
+#body {
+  --hue: var(--hue-neutral); /* var inserts custom 'hue' property */
+  padding: 0;
+  margin: 0;
+  height: 100vh; /* 100 percent VIEW HEIGHT */
+  justify-content: center;
+  align-items: center;
+  color: black;
+  text-align: center;
+  background-size: 100% 100%;
+  font-size: 45px;
+}
+h2 {
+  margin-bottom: 50px;
+  font-size: 45px;
+  color: black
+
+}
+h4 {
+  font-size: 19px;
+}
+
+.hide-image {
+  background-size: 0% 20%;
+}
+.score {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  font-size: 1.2rem;
+  color: white;
+  background-color: black;
+  box-shadow: 0 0 10px 2px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+
+}
+
+body.correct {
+  background-color: green;
+ }
+
+body.wrong {
+  background-color: red;
+}
+
+
+.qcontainer {
+  width: 800px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 0 10px 2px;
+  margin-left: auto;
+  margin-right: auto;
+
+
+}
+.navbar {
+  position: relative;
+  margin-bottom: 0px;
+  font-family: bootle;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+}
+.navbar-brand {
+  font-size: 30px;
+  align-items :center;
+}
+
+.top-nav {
+  background-color: #671100;
+}
+
+.top-nav a {
+  color: #d3e316;
+}
+
+h1.headingStatement {
+  font-family: Monospace;
+  font-size: 2em;
+}
+
+
+/* bootstrap override */
+
+a.btn-primary:hover {
+  text-decoration: none;
+}
+
+.navbar-nav li a:hover {
+    background-color: #FF0000;
+    border-radius: 10px;
+}
+.navbar-toggle .icon-bar {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background-color: #cccccc;
+  border-radius: 1px;
+}
+
+.btn-grid {
+  display: grid;
+  grid-template-columns: repeat(2, auto); /* 2 cols per row with a width of auto */
+  gap: 10px;
+  margin:20px 0;
+}
+
+.btn {
+  border: 2px solid hsl(var(--hue), 100% , 30%);
+  border-radius: 10px;
+  padding: 5px 10px;
+  outline: none;
+  font-size: 20px;
+}
+
+.ans:hover {
+  background-color: black;
+  color:white;
+  font-size: 30px;
+}
+
+
+.btn.correct {
+background-color: green;
+}
+
+.btn.wrong {
+  background-color: red;
+}
+.start-btn , .next-btn {
+  font-size: 2.5rem;
+  font-weight: bold;
+  padding: 10px 20px;
+}
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hide {
+  display: none;
+}
+
+.navbar-brand{
+  font-size: 30px;
+}
+#title {
+  margin-top: 15%;
+}
