@@ -10,8 +10,7 @@ This application was created for our Web Development I class at LaGuardia Commun
 
 ## Getting Started
 - Fork this repo 
-- In terminal run `npm i`
-- In terminal run `npm start` and visit http://localhost:3000/ to start application
+- In terminal run `open index.html`
 
 ## Contributors
 - Stacey Carrillo 
